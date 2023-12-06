@@ -1,0 +1,138 @@
+MPLINK 5.09, LINKER
+Linker Map File - Created Fri Sep 29 14:04:51 2023
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                   .org_1       code   0x000000    program   0x000004
+                   .cinit    romdata   0x000004    program   0x000002
+                     ISRH       code   0x000008    program   0x000004
+                     ISRL       code   0x000018    program   0x000004
+                   SETUP_       code   0x00001c    program   0x000030
+             interrup_TMR       code   0x00004c    program   0x00002e
+        interrup_periferi       code   0x00007a    program   0x000028
+          interrupts_code       code   0x0000a2    program   0x000026
+                    main_       code   0x0000c8    program   0x000020
+                   Delay_       code   0x0000e8    program   0x00001a
+.config_300001_BUILD/DEFAULT/PRODUCTION/TIMER_1    romdata   0x300001    program   0x000001
+.config_300002_BUILD/DEFAULT/PRODUCTION/TIMER_1    romdata   0x300002    program   0x000001
+.config_300003_BUILD/DEFAULT/PRODUCTION/TIMER_1    romdata   0x300003    program   0x000001
+.config_300005_BUILD/DEFAULT/PRODUCTION/TIMER_1    romdata   0x300005    program   0x000001
+.config_300006_BUILD/DEFAULT/PRODUCTION/TIMER_1    romdata   0x300006    program   0x000001
+.config_300008_BUILD/DEFAULT/PRODUCTION/TIMER_1    romdata   0x300008    program   0x000001
+.config_300009_BUILD/DEFAULT/PRODUCTION/TIMER_1    romdata   0x300009    program   0x000001
+.config_30000A_BUILD/DEFAULT/PRODUCTION/TIMER_1    romdata   0x30000a    program   0x000001
+.config_30000B_BUILD/DEFAULT/PRODUCTION/TIMER_1    romdata   0x30000b    program   0x000001
+.config_30000C_BUILD/DEFAULT/PRODUCTION/TIMER_1    romdata   0x30000c    program   0x000001
+.config_30000D_BUILD/DEFAULT/PRODUCTION/TIMER_1    romdata   0x30000d    program   0x000001
+                   .org_0       code   0xf00000    program   0x000004
+                sampleram      udata   0x000060       data   0x000003
+                   Setup_      udata   0x000063       data   0x000004
+              context_ram      udata   0x000067       data   0x000003
+                Delay_ram      udata   0x00006a       data   0x000003
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x000005      
+                            0x000008    0x00000b      
+                            0x000018    0x000101      
+                            0x300001    0x300003      
+                            0x300005    0x300006      
+                            0x300008    0x30000d      
+                            0xf00000    0xf00003      
+            259 out of 33048 program addresses used, program memory utilization is 0%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+   CONFIGURACION_INTERRUP   0x00003e    program     static C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\setup.asm
+                   DATAEE   0xf00000    program     static C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\Setup.inc
+                 Delay100   0x0000e8    program     extern C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\delay.asm
+                  Delay_0   0x0000f0    program     static C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\delay.asm
+                     EXIT   0x00006c    program     static C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\interrup_TMR.asm
+                 EXIT_ISR   0x0000ae    program     extern C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\interrupciones.asm
+                 HIGH_ISR   0x0000a2    program     static C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\interrupciones.asm
+               INCREMENTO   0x00005c    program     static C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\interrup_TMR.asm
+                ISRconfig   0x0000c6    program     static C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\interrupciones.asm
+           Interrup_boton   0x000084    program     extern C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\interrup_periferico.asm
+                  LOW_ISR   0x0000b0    program     static C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\interrupciones.asm
+                     OSCC   0x00002c    program     static C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\setup.asm
+                   PORTD_   0x000030    program     static C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\setup.asm
+                 RES_VECT   0x000000    program     static C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\timer_18F45K20TEMP.ASM
+                   Set_up   0x00001c    program     extern C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\setup.asm
+             _Delay__000A   0x0000f2    program     static C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\delay.asm
+             _Delay__0014   0x0000fc    program     static C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\delay.asm
+              _main__0010   0x0000d8    program     static C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\timer_18F45K20TEMP.ASM
+                   codigo   0x0000d2    program     static C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\timer_18F45K20TEMP.ASM
+         config_inte_TMR0   0x00004c    program     extern C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\interrup_TMR.asm
+        config_inte_boton   0x00007a    program     extern C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\interrup_periferico.asm
+                   espera   0x0000da    program     static C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\timer_18F45K20TEMP.ASM
+            interrup_TMR0   0x000056    program     extern C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\interrup_TMR.asm
+                     loop   0x0000cc    program     static C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\timer_18F45K20TEMP.ASM
+                     main   0x0000c8    program     extern C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\timer_18F45K20TEMP.ASM
+                reiniciar   0x0000e0    program     static C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\timer_18F45K20TEMP.ASM
+                 BSR_TEMP   0x000069       data     static C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\Interrupciones.inc
+                  CONTROL   0x000064       data     extern C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\setup.asm
+            CONTROL_DELAY   0x000063       data     extern C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\setup.asm
+                 COUNTER1   0x000065       data     extern C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\setup.asm
+                 COUNTER2   0x000066       data     extern C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\setup.asm
+                   MYVAR1   0x000060       data     static C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\Setup.inc
+                   MYVAR2   0x000061       data     static C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\Setup.inc
+                   MYVAR3   0x000062       data     static C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\Setup.inc
+              STATUS_TEMP   0x000068       data     static C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\Interrupciones.inc
+                   W_TEMP   0x000067       data     static C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\Interrupciones.inc
+                       d1   0x00006a       data     static C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\Delay.inc
+                       d2   0x00006b       data     static C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\Delay.inc
+                       d3   0x00006c       data     static C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\Delay.inc
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                 RES_VECT   0x000000    program     static C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\timer_18F45K20TEMP.ASM
+                   Set_up   0x00001c    program     extern C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\setup.asm
+                     OSCC   0x00002c    program     static C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\setup.asm
+                   PORTD_   0x000030    program     static C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\setup.asm
+   CONFIGURACION_INTERRUP   0x00003e    program     static C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\setup.asm
+         config_inte_TMR0   0x00004c    program     extern C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\interrup_TMR.asm
+            interrup_TMR0   0x000056    program     extern C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\interrup_TMR.asm
+               INCREMENTO   0x00005c    program     static C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\interrup_TMR.asm
+                     EXIT   0x00006c    program     static C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\interrup_TMR.asm
+        config_inte_boton   0x00007a    program     extern C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\interrup_periferico.asm
+           Interrup_boton   0x000084    program     extern C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\interrup_periferico.asm
+                 HIGH_ISR   0x0000a2    program     static C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\interrupciones.asm
+                 EXIT_ISR   0x0000ae    program     extern C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\interrupciones.asm
+                  LOW_ISR   0x0000b0    program     static C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\interrupciones.asm
+                ISRconfig   0x0000c6    program     static C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\interrupciones.asm
+                     main   0x0000c8    program     extern C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\timer_18F45K20TEMP.ASM
+                     loop   0x0000cc    program     static C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\timer_18F45K20TEMP.ASM
+                   codigo   0x0000d2    program     static C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\timer_18F45K20TEMP.ASM
+              _main__0010   0x0000d8    program     static C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\timer_18F45K20TEMP.ASM
+                   espera   0x0000da    program     static C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\timer_18F45K20TEMP.ASM
+                reiniciar   0x0000e0    program     static C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\timer_18F45K20TEMP.ASM
+                 Delay100   0x0000e8    program     extern C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\delay.asm
+                  Delay_0   0x0000f0    program     static C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\delay.asm
+             _Delay__000A   0x0000f2    program     static C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\delay.asm
+             _Delay__0014   0x0000fc    program     static C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\delay.asm
+                   DATAEE   0xf00000    program     static C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\Setup.inc
+                   MYVAR1   0x000060       data     static C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\Setup.inc
+                   MYVAR2   0x000061       data     static C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\Setup.inc
+                   MYVAR3   0x000062       data     static C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\Setup.inc
+            CONTROL_DELAY   0x000063       data     extern C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\setup.asm
+                  CONTROL   0x000064       data     extern C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\setup.asm
+                 COUNTER1   0x000065       data     extern C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\setup.asm
+                 COUNTER2   0x000066       data     extern C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\setup.asm
+                   W_TEMP   0x000067       data     static C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\Interrupciones.inc
+              STATUS_TEMP   0x000068       data     static C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\Interrupciones.inc
+                 BSR_TEMP   0x000069       data     static C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\Interrupciones.inc
+                       d1   0x00006a       data     static C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\Delay.inc
+                       d2   0x00006b       data     static C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\Delay.inc
+                       d3   0x00006c       data     static C:\Users\TRABAJO\OneDrive\Escritorio\Distrital\6 Semestre\Tareas\Micros\PARCIAL 1\Parcial_correccion .X\Delay.inc
+
+
